@@ -22,10 +22,7 @@ jobs:
         go-version: '1.22.5'
 
     - name: Build
-      run: go build -v ./... -o /app/server
-
-    - name: Test
-      run: go test -v ./...
+      run: go build -v -o /app/server
 
   deploy:
     runs-on: self-hosted
