@@ -28,4 +28,4 @@ jobs:
     runs-on: self-hosted
     needs: build
     steps:
-    - run: /app/server
+    - run: sudo systemctl restart server.service
