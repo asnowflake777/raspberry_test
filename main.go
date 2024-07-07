@@ -5,7 +5,7 @@ import "net/http"
 func main() {
 	http.HandleFunc("/",
 		func(w http.ResponseWriter, r *http.Request) {
-			_, _ = w.Write([]byte("Hello Amazing World\n"))
+			_, _ = w.Write([]byte("Привет Оксанчик!!!\n"))
 		},
 	)
 	err := http.ListenAndServe("0.0.0.0:8080", nil)
