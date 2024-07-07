@@ -28,4 +28,5 @@ jobs:
     runs-on: self-hosted
     needs: build
     steps:
-    - run: sudo systemctl restart server.service
+      - run: cp -r frontend /app/frontend
+      - run: sudo systemctl restart server.service
