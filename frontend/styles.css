@@ -16,7 +16,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 600px;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
 }
 
@@ -54,6 +54,45 @@ li {
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+li:hover {
+    background: #ddd;
+}
+
+.user-details {
+    display: none;
+    background: #f9f9f9;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.user-detail-item {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-detail-content {
+    display: none;
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.user-detail-item:hover {
+    background: #f1f1f1;
+    cursor: pointer;
+}
+
+.email-button {
+    margin-left: 10px;
 }
 
 /* Responsive Design */
